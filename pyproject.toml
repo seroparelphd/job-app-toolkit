@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "job-app-toolkit"
+version = "0.1.0"
+description = "Self-improving resume and cover letter pipeline with AI trope detection, PyMuPDF line-fill measurement, and cross-document redundancy checking."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Sero Toriano Parel"}
+]
+dependencies = [
+    "PyMuPDF>=1.23.0",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business",
+]
+
+[project.optional-dependencies]
+ats = ["pypdf>=3.0.0"]
+dev = ["pytest", "ruff"]
+
+[project.scripts]
+jat = "toolkit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["toolkit*"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"

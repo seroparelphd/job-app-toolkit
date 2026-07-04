@@ -1,0 +1,67 @@
+# User Profile — Example
+
+# Fill this in with your actual information.
+# This file is gitignored — only the .example version is tracked.
+
+name: "Jane Doe, PhD"
+preferred_name: "Jane"
+email: "janedoe@example.com"
+phone: "555-123-4567"
+location: "New York, NY 10001"
+linkedin: "linkedin.com/in/janedoe"
+github: "github.com/janedoe"
+google_scholar: ""  # optional
+
+education:
+  - degree: "PhD"
+    field: "Computer Science"
+    institution: "MIT"
+    year: 2024
+  - degree: "BS"
+    field: "Mathematics"
+    institution: "Stanford University"
+    year: 2019
+
+current_role:
+  title: "Research Scientist"
+  company: "Acme AI Labs"
+  start_date: "2024-06"
+  description: "LLM evaluation, safety testing, model assessment"
+
+publications:
+  - authors: "Doe J, Smith A, et al."
+    title: "Evaluating Large Language Models in Clinical Settings"
+    journal: "Nature Machine Intelligence"
+    year: 2024
+    doi: "10.1038/s42256-024-00001-0"
+    pmid: "12345678"
+
+# Contact fields the linter checks for in your resume
+contact_fields:
+  email: "janedoe@example\\.com"
+  phone: "555-123-4567"
+  linkedin: "linkedin\\.com/in/janedoe"
+
+# Job search parameters
+job_search:
+  salary_floor_max: 200000   # comp range MAX must reach this
+  contract_rate_floor: 96    # $/hr for contract roles
+  locations:
+    - "NYC"
+    - "Remote-US"
+  cooldowns: []
+  exclusions: []
+
+# Statistical analysis boundary
+# Which roles/sections allow full statistical claims vs restricted framing
+statistical_boundary:
+  unrestricted_sections:
+    - "PhD research"
+    - "Academic positions"
+  restricted_sections:
+    - "Industry experience"
+  restricted_terms:
+    - "statistical analysis"
+    - "statistical modeling"
+    - "ANOVA"
+    - "mixed-effects"

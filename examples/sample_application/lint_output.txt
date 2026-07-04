@@ -1,0 +1,5 @@
+$ jat lint Resume__Research_Scientist__Example_Role.md
+OK Lint clean
+
+$ jat crosscheck .
+OK Cross-doc check clean (2 documents compared)

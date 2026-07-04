@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+
+# User config (templates are tracked, filled-in configs are not)
+config/profile.yaml
+config/ground_truth.md
+config/banned_skills.yaml
+
+# Application directories (private per-user)
+applications/
+
+# PDFs (build artifacts)
+*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

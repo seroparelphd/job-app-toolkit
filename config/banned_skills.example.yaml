@@ -1,0 +1,41 @@
+# Banned Skills Configuration — Example
+#
+# Skills listed here will be flagged by the linter if they appear in your resume.
+# These should be tools, libraries, or technologies you haven't actually used
+# but might be tempted to add for ATS keyword matching.
+#
+# The linter also checks for skill redundancy — near-synonyms that shouldn't
+# appear together in the same skills bullet (e.g., "bash" and "shell scripting").
+
+banned:
+  # Libraries/frameworks not actually used
+  - networkx
+  - spacy
+  - nltk
+  - statsmodels
+  - joblib
+  - transformers
+  - wandb
+  - mlflow
+
+  # Infrastructure not used
+  - docker
+  - kubernetes
+  - terraform
+  - github actions
+  - postgresql
+  - bigquery
+
+  # Cloud platforms not used
+  - aws
+  - s3
+  - ec2
+  - gcp
+  - azure
+
+# Near-synonym sets — if 2+ from a set appear in the same bullet, flag it
+redundancy_sets:
+  - [bash, shell scripting, shell, unix, linux]
+  - [git, version control]
+  - [jupyter, jupyterlab, notebook]
+  - [python, python3]
